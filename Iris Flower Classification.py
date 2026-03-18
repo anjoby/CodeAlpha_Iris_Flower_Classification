@@ -39,7 +39,7 @@ print('Classification Report:')
 print(class_report)
 
 plt.figure(figsize=(8, 6))
-sns.heatmap(conf_matrix, annot=True, fmt='d', cmap='Blues', 
+sns.heatmap(conf_matrix, annot=True, fmt='d', cmap='Blues',
             xticklabels=data['Species'].unique(), 
             yticklabels=data['Species'].unique())
 plt.ylabel('Actual')
